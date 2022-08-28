@@ -29,3 +29,13 @@ Project consist of 3 parts:
     `python run.py`
 
 3. Go to http://0.0.0.0:3001/
+
+
+<img width="1440" alt="Screenshot 2022-08-28 at 22 19 55" src="https://user-images.githubusercontent.com/86057193/187096612-4b15be70-5203-4036-b05d-f6a9b9020b2b.png">
+
+<img width="1440" alt="Screenshot 2022-08-28 at 22 20 08" src="https://user-images.githubusercontent.com/86057193/187096617-13b291a4-12d7-43c9-a0d4-0ada68be7db6.png">
+
+<img width="1440" alt="Screenshot 2022-08-28 at 22 20 14" src="https://user-images.githubusercontent.com/86057193/187096621-0f3ddb9b-eb72-4bd0-bbf6-67a36c58d99f.png">
+
+
+3. Go to http://0.0.0.0:3001/

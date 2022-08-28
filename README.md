@@ -1,13 +1,13 @@
 # Disaster Response Pipeline Project
 
+
+
 This project is developed as a final assignment for Data engineering course as a part of Data Science nanodegree in
 Udacity
 
+### Instructions how to run the app:
+0. Before running commands below change working directory in Terminal using command cd
 
-
-
-
-### Instructions:
 1. Run the following commands in the project's root directory to set up your database and model.
 
     - To run ETL pipeline that cleans data and stores in database

@@ -8,6 +8,10 @@ Project consist of 3 parts:
     - Preprocessing of Raw data and Saving to Database
 2. ML Pipeline Preparation
     - Trainin Multioutput classification algorithm
+    - After iterating Logistic regression, Random Forest and XgBoost with different hyperparameters the best algorithm was chose
+   
+    <img width="568" alt="Screenshot 2022-08-28 at 22 56 21" src="https://user-images.githubusercontent.com/86057193/187096550-50d9448a-0616-405a-9fd8-a336752d8549.png">
+
 
 3. Web App
 

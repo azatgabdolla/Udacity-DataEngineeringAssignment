@@ -1,9 +1,15 @@
 # Disaster Response Pipeline Project
-
-
-
 This project is developed as a final assignment for Data engineering course as a part of Data Science nanodegree in
 Udacity
+
+Project consist of 3 parts:
+
+1. ETL Pipeline Preparation
+    - Preprocessing of Raw data and Saving to Database
+2. ML Pipeline Preparation
+    - Trainin Multioutput classification algorithm
+
+3. Web App
 
 ### Instructions how to run the app:
 0. Before running commands below change working directory in Terminal using command cd

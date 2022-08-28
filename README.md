@@ -38,4 +38,3 @@ Project consist of 3 parts:
 <img width="1440" alt="Screenshot 2022-08-28 at 22 20 14" src="https://user-images.githubusercontent.com/86057193/187096621-0f3ddb9b-eb72-4bd0-bbf6-67a36c58d99f.png">
 
 
-3. Go to http://0.0.0.0:3001/

@@ -17,7 +17,8 @@ Project consist of 3 parts:
     - Trainin Multioutput classification algorithm
     - After iterating Logistic regression, Random Forest and XgBoost with different hyperparameters the best algorithm was chose
 3. Web App 
-   
+
+---
 
 ### File Descriptions
 

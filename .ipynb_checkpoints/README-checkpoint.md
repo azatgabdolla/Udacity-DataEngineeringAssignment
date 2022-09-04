@@ -79,6 +79,10 @@ Project consist of 3 parts:
 
 3. Go to http://0.0.0.0:3001/
 
+---
+
+### Web app Visuals:
+
 
 <img width="1440" alt="Screenshot 2022-08-28 at 22 19 55" src="https://user-images.githubusercontent.com/86057193/187096612-4b15be70-5203-4036-b05d-f6a9b9020b2b.png">
 

@@ -8,8 +8,8 @@ from nltk.tokenize import word_tokenize
 from flask import Flask
 from flask import render_template, request, jsonify
 from plotly.graph_objs import Bar
-#from sklearn.externals import joblib
 import joblib
+
 from sqlalchemy import create_engine
 
 
@@ -42,18 +42,24 @@ model = joblib.load("models/classifier.pkl")
 def index():
     
     # extract data needed for visuals
-    # TODO: Below is an example - modify to extract data for your own visuals
+    
     genre_counts = df.groupby('genre').count()['message']
     genre_names = list(genre_counts.index)
     
+    Y = df.iloc[:, range(4,df.shape[1])]
+    Y = Y.loc[:, Y.nunique() > 1]
+    categories_distribution = df.loc[:,Y.columns].sum(axis = 0)/df.shape[0]
+    
+    categories_names = list(Y.columns)
+    
+    
     # create visuals
-    # TODO: Below is an example - modify to create your own visuals
     graphs = [
         {
             'data': [
                 Bar(
-                    x=genre_names,
-                    y=genre_counts
+                    x = genre_names,
+                    y = genre_counts
                 )
             ],
 
@@ -66,11 +72,34 @@ def index():
                     'title': "Genre"
                 }
             }
+        },
+        
+        {
+            
+            'data' : [
+                Bar(
+                    x = categories_names,
+                    y = categories_distribution
+                )
+            ],
+            'layout' : {
+                
+                'title' : 'Distribution of Categories in Input data (%)',
+                'yaxis' : {
+                    'title' : 'Count'
+                },
+                
+                'xaxis' : {
+                    'title' : 'Categories'
+                } 
+            }
         }
+    
     ]
     
     # encode plotly graphs in JSON
     ids = ["graph-{}".format(i) for i, _ in enumerate(graphs)]
+    
     graphJSON = json.dumps(graphs, cls=plotly.utils.PlotlyJSONEncoder)
     
     # render web page with plotly graphs

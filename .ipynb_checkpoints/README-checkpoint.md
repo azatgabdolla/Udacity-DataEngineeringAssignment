@@ -24,20 +24,27 @@ Project consist of 3 parts:
 * app
 
     | - templates
+    
     | |- master.html # main page of web app
+    
     | |- go.html # classification result page of web app
+    
     |- run.py # Flask file that runs app
 
 * data
 
     |- disaster_categories.csv # input data
+    
     |- disaster_messages.csv # input data
+    
     |- process_data.py # data processing code
+    
     |- DisasterResponse.db # database to save processed data
 
 * models
 
     |- train_classifier.py # machine learning code
+    
     |- classifier.pkl # output model
 
 - README.md
@@ -45,9 +52,13 @@ Project consist of 3 parts:
 * notebooks # folder not used in the app, a.k.a sanbox where analytics drafts are collected
 
     |- ETL Pipeline Preparation.ipynb # ETL notebook
+    
     |- ML Pipeline Preparation.ipynb # ML notebook
+    
     |- categories.csv # input data
+    
     |- messages.csv # input data
+    
     |- project_database.db # output data
 
 ---
